@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.wrapper{
+    width: 80%;
+    margin: 100px auto;
+    box-sizing: border-box;
+}
+
+.box{
+    margin: 15px 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
+}
+
+.card{
+    flex-basis: 230px;
+    margin:15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+li{
+    list-style-type: none;
+}
+
+h2,h3{
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* styles for block dynamic pseudo classes */
+.card-dynamic li a:link{
+    text-decoration: none;
+    color: red;
+}
+.card-dynamic li a:visited{
+    color: #333;
+}
+
+.card-hover a{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.card-hover a:hover{
+    border-color: blue;
+    color: blue;
+    background-color: yellow;
+}
+
+.card-active a{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.card-active a:active{
+    border-color: grey;
+    color: white;
+    background-color: red;
+}
+
+.card-focus input:focus{
+    border: 2px solid green;
+    outline: none;
+    padding: 10px;
+}
+
+/* styles for block user interfaces */
+.card-checked{
+    text-align: left;
+    padding-left: 20px;
+}
+.card-checked span{
+    display: inline-block;
+    margin-left: 10px;
+}
+.card-checked input:checked + span{
+    background-color: yellow;
+}
+
+/* styles for block structure */
+.card-structure{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.even-list li:nth-child(even){
+    background-color: #ccc;
+}
+
+.one-row-list li:nth-child(3){
+    background-color: #ccc;
+}
+
+.every-n-row-list li:nth-child(3n+1){
+    background-color: #ccc;
+}
+
+/* styles for :target block */
+.target ul{
+    text-align: center;
+}
+.target li{
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.target p:target{
+    background-color: red;
+}
+
+/* styles for lang block */
+.lang p:lang(en){
+    background-color: #f00;
+    color: #fff;
+}
+.lang p:lang(he){
+    background-color: #00f;
+    color: #fff;
+}
+
+/* styles for pseudo elements block */
+.pseudo-elements blockquote::before {
+    content: "«";
+}
+.pseudo-elements blockquote::after {
+    content: "»";
+}
+.pseudo-elements blockquote::selection {
+    color: #0f0;
+    background-color: #070;
+}
+
+.pseudo-elements p:first-letter{
+    font-weight: 900;
+    color: red;
+    font-size: 1.2em;
+}
+

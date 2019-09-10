@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classes</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="dynamic box">
+        <h2>:link :visited :hover :active :focus</h2>
+        <div class="row">
+            <div class="card card-dynamic">
+                <h3>:link :visited</h3>
+                <ul>
+                    <li><a href="#test">Unvisited link</a></li>
+                    <li><a href="https://tel-ran.com" target="_blank">Visited link</a></li>
+                </ul>
+            </div>
+            <div class="card card-hover">
+                <h3>:hover</h3>
+                <a href="#">Click me</a>
+            </div>
+            <div class="card card-active">
+                <h3>:active</h3>
+                <a href="#">Press and hold</a>
+            </div>
+            <div class="card card-focus">
+                <h3>:focus</h3>
+                <input type="text" placeholder="Type your email">
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div class="user-interface box">
+        <h2>:checked</h2>
+        <div class="row">
+            <div class="card card-checked">
+                <input type="checkbox"><span>CSS</span><br>
+                <input type="checkbox"><span>HTML</span><br>
+                <input type="checkbox"><span>JavaScript</span><br>
+                <input type="checkbox"><span>Java</span><br>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="structure box">
+        <h2>:nth-child </h2>
+        <div class="row">
+            <div class="card card-structure">
+                <h3>:nth-child(even)</h3>
+               <ul class="even-list">
+                   <li>Java</li>
+                   <li>JavaScript</li>
+                   <li>Html</li>
+                   <li>CSS</li>
+                   <li>ReactJS</li>
+                   <li>CSS</li>
+               </ul>
+            </div>
+            <div class="card card-structure">
+                <h3>:nth-child(3)</h3>
+                <ul class="one-row-list">
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>ReactJS</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <div class="card card-structure">
+                <h3>:nth-child(3n+1)</h3>
+                <ul class="every-n-row-list">
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>ReactJS</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="target box">
+        <h2>:target </h2>
+        <ul>
+            <li><a href="#one">One</a></li>
+            <li><a href="#two">Two</a></li>
+        </ul>
+        <div class="row">
+            <div class="card">
+                <h3>One</h3>
+                <p id="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+                <h3>Two</h3>
+                <p id="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="lang box">
+        <h2>:lang()</h2>
+        <div class="row">
+            <div class="card">
+                <h3>:lang(en)</h3>
+                <p lang="en">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+                <h3>:lang(he)</h3>
+                <p lang="he">Lorem Ipsum הוא פשוט טקסט גולמי של תעשיית ההדפסה וההקלדה</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="pseudo-elements box">
+        <h2>::before ::after ::selection ::first-letter</h2>
+        <div class="row">
+            <div class="card">
+                <h3>::before ::after ::selection</h3>
+                <blockquote>Quotes added from CSS. Select this text</blockquote>
+            </div>
+            <div class="card">
+                <h3>::first-letter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
